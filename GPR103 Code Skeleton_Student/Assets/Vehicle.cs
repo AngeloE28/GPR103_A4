@@ -24,7 +24,12 @@ public class Vehicle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+     
         
+        if((transform.position.x * moveDirection) > (endPosition.x * moveDirection))
+        {
+            transform.position = startingPosition;
+        }
     }
 
 }
