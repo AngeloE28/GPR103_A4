@@ -34,11 +34,18 @@ public class PlayerSimpleMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.transform.GetComponent<Vehicle>()!= null)
+        {
+            print("Hit");
+        }
+        else
+        {
+            print(collision.transform.tag);
+        }
     }
 }

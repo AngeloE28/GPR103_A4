@@ -18,14 +18,15 @@ public class Vehicle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        transform.position = startingPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-     
+        transform.Translate(Vector2.right * Time.deltaTime * speed * moveDirection);
         
+        // When you multiply the inequaltiy on both siddes by -1 ( or divide by -1), the inequality changes direction
         if((transform.position.x * moveDirection) > (endPosition.x * moveDirection))
         {
             transform.position = startingPosition;
