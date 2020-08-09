@@ -24,6 +24,11 @@ public class Player : MonoBehaviour
 
     public bool onPlatform = false;
 
+    public KeyCode up = KeyCode.W;
+    public KeyCode down = KeyCode.S;
+    public KeyCode left = KeyCode.A;
+    public KeyCode right = KeyCode.D;
+
     private GameManager myGameManager; //A reference to the GameManager in the scene.
 
     // Start is called before the first frame update
@@ -36,34 +41,37 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(playerCanMove && playerIsAlive)
+        if (myGameManager.isGameRunning == true)
         {
-            if (Input.GetKeyUp(KeyCode.UpArrow) && transform.position.y < myGameManager.levelConstraintTop)
+            if (playerCanMove && playerIsAlive)
             {
-                transform.Translate(new Vector2(0, 1));
-                // same thing as the ones in left and right
-                myAudioSource.PlayOneShot(jumpSound);
-            }
-            else if (Input.GetKeyUp(KeyCode.DownArrow) && transform.position.y > myGameManager.levelConstraintBottom)
-            {
-                transform.Translate(new Vector2(0, -1));
-                // same thing as the ones in left and right
-                myAudioSource.PlayOneShot(jumpSound);
-            }
-            else if (Input.GetKeyUp(KeyCode.LeftArrow) && transform.position.x > myGameManager.levelConstraintLeft)
-            {
-                transform.Translate(new Vector2(-1, 0));
+                if (Input.GetKeyUp(up) && transform.position.y < myGameManager.levelConstraintTop)
+                {
+                    transform.Translate(new Vector2(0, 1));
+                    // same thing as the ones in left and right
+                    myAudioSource.PlayOneShot(jumpSound);
+                }
+                else if (Input.GetKeyUp(down) && transform.position.y > myGameManager.levelConstraintBottom)
+                {
+                    transform.Translate(new Vector2(0, -1));
+                    // same thing as the ones in left and right
+                    myAudioSource.PlayOneShot(jumpSound);
+                }
+                else if (Input.GetKeyUp(left) && transform.position.x > myGameManager.levelConstraintLeft)
+                {
+                    transform.Translate(new Vector2(-1, 0));
 
-                myAudioSource.clip = jumpSound;
-                myAudioSource.pitch = Random.Range(0.7f, 1.2f);
-                myAudioSource.Play();
-            }
-            else if (Input.GetKeyUp(KeyCode.RightArrow) && transform.position.x < myGameManager.levelConstraintRight)
-            {
-                transform.Translate(new Vector2(1, 0));
+                    myAudioSource.clip = jumpSound;
+                    myAudioSource.pitch = Random.Range(0.7f, 1.2f);
+                    myAudioSource.Play();
+                }
+                else if (Input.GetKeyUp(right) && transform.position.x < myGameManager.levelConstraintRight)
+                {
+                    transform.Translate(new Vector2(1, 0));
 
-                myAudioSource.clip = jumpSound;
-                myAudioSource.Play();
+                    myAudioSource.clip = jumpSound;
+                    myAudioSource.Play();
+                }
             }
         }
     }

@@ -25,12 +25,20 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameTimeRemaining = totalGameTime;
+        isGameRunning = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (gameTimeRemaining > 0)
+        {
+            gameTimeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            isGameRunning = false;
+        }
     }
 }
