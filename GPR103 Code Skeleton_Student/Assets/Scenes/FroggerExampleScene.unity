@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 39513719}
   - component: {fileID: 39513718}
   - component: {fileID: 39513720}
+  - component: {fileID: 39513721}
   m_Layer: 0
   m_Name: short_bamboo
   m_TagString: Untagged
@@ -339,7 +340,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2571305fce5938c41865f0cd96c42d94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -381,6 +382,32 @@ MonoBehaviour:
   speed: 3
   startingPosition: {x: -10, y: 0.5}
   endPosition: {x: 18, y: 1}
+--- !u!61 &39513721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39513717}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01039362, y: 0.04157424}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6466188, y: 0.5656886}
+  m_EdgeRadius: 0
 --- !u!1 &73549908
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +500,7 @@ GameObject:
   - component: {fileID: 78035662}
   - component: {fileID: 78035664}
   - component: {fileID: 78035663}
+  - component: {fileID: 78035665}
   m_Layer: 0
   m_Name: Bamboo (8)
   m_TagString: Untagged
@@ -560,6 +588,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &78035665
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78035661}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000047683716, y: 0.024839163}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.031272, y: 0.5970292}
+  m_EdgeRadius: 0
 --- !u!1 &138217027
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +787,7 @@ GameObject:
   - component: {fileID: 180488805}
   - component: {fileID: 180488807}
   - component: {fileID: 180488806}
+  - component: {fileID: 180488808}
   m_Layer: 0
   m_Name: Bamboo (5)
   m_TagString: Untagged
@@ -820,6 +875,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &180488808
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180488804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.006210327, y: 0.02483964}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0188522, y: 0.5970292}
+  m_EdgeRadius: 0
 --- !u!1 &210966839
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +993,7 @@ GameObject:
   - component: {fileID: 218006452}
   - component: {fileID: 218006454}
   - component: {fileID: 218006453}
+  - component: {fileID: 218006455}
   m_Layer: 0
   m_Name: Bamboo (7)
   m_TagString: Untagged
@@ -999,6 +1081,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &218006455
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218006451}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0062093735, y: 0.024838924}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9940128, y: 0.57218933}
+  m_EdgeRadius: 0
 --- !u!1 &241229029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1847,7 @@ GameObject:
   - component: {fileID: 488112148}
   - component: {fileID: 488112150}
   - component: {fileID: 488112149}
+  - component: {fileID: 488112151}
   m_Layer: 0
   m_Name: Lane1_car (1)
   m_TagString: Untagged
@@ -1826,6 +1935,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &488112151
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488112147}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.98714495, y: 0.9914303}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.92875576, y: 0.71450806}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1972,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1852,6 +1988,102 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!82 &519420030
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2244,6 +2476,8 @@ GameObject:
   - component: {fileID: 661437223}
   - component: {fileID: 661437225}
   - component: {fileID: 661437224}
+  - component: {fileID: 661437226}
+  - component: {fileID: 661437227}
   m_Layer: 0
   m_Name: excavator (1)
   m_TagString: Untagged
@@ -2331,6 +2565,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &661437226
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661437222}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0020503998, y: 0.0017075539}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8862877, y: 0.85815144}
+  m_EdgeRadius: 0
+--- !u!95 &661437227
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661437222}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6892e04fc28dc204f881e9574a7e1631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &677809677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +3026,7 @@ GameObject:
   - component: {fileID: 781576687}
   - component: {fileID: 781576689}
   - component: {fileID: 781576688}
+  - component: {fileID: 781576690}
   m_Layer: 0
   m_Name: Bamboo (10)
   m_TagString: Untagged
@@ -2834,6 +3114,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &781576690
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781576686}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.006210327, y: 0.02483964}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0188522, y: 0.62186766}
+  m_EdgeRadius: 0
 --- !u!1 &788421503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,6 +3151,7 @@ GameObject:
   - component: {fileID: 788421504}
   - component: {fileID: 788421506}
   - component: {fileID: 788421505}
+  - component: {fileID: 788421507}
   m_Layer: 0
   m_Name: short_bamboo (3)
   m_TagString: Untagged
@@ -2932,6 +3239,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &788421507
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788421503}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.020711184}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6271973, y: 0.5709157}
+  m_EdgeRadius: 0
 --- !u!1 &840484404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +3301,7 @@ MonoBehaviour:
   levelConstraintLeft: -7.5
   levelConstraintRight: 7.5
   isGameRunning: 0
-  totalGameTime: 10
+  totalGameTime: 60
   gameTimeRemaining: 0
 --- !u!4 &840484406
 Transform:
@@ -3076,6 +3409,8 @@ GameObject:
   - component: {fileID: 870613142}
   - component: {fileID: 870613141}
   - component: {fileID: 870613140}
+  - component: {fileID: 870613144}
+  - component: {fileID: 870613143}
   m_Layer: 0
   m_Name: panda
   m_TagString: Untagged
@@ -3100,8 +3435,9 @@ MonoBehaviour:
   playerLivesRemaining: 0
   playerIsAlive: 1
   playerCanMove: 1
+  isPlayerMoving: 0
   myAudioSource: {fileID: 0}
-  jumpSound: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: 1b10fe5a842823446bf3a263fceaca5a, type: 3}
   deathSound: {fileID: 0}
   deathFxPrefab: {fileID: 0}
   onPlatform: 0
@@ -3173,6 +3509,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &870613143
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870613139}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &870613144
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870613139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030826792, y: 0.07926922}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46273103, y: 0.49796164}
+  m_EdgeRadius: 0
 --- !u!1 &933107114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3265,6 +3648,7 @@ GameObject:
   - component: {fileID: 937264349}
   - component: {fileID: 937264351}
   - component: {fileID: 937264350}
+  - component: {fileID: 937264352}
   m_Layer: 0
   m_Name: short_bamboo (1)
   m_TagString: Untagged
@@ -3352,6 +3736,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &937264352
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937264348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01039362, y: 0.02598381}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6466188, y: 0.5760822}
+  m_EdgeRadius: 0
 --- !u!1 &940782601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,6 +3773,7 @@ GameObject:
   - component: {fileID: 940782602}
   - component: {fileID: 940782604}
   - component: {fileID: 940782603}
+  - component: {fileID: 940782605}
   m_Layer: 0
   m_Name: excavator (2)
   m_TagString: Untagged
@@ -3450,6 +3861,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &940782605
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940782601}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: 0.020036459}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.948514, y: 0.895082}
+  m_EdgeRadius: 0
 --- !u!1 &971292686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3704,6 +4141,7 @@ GameObject:
   - component: {fileID: 999841356}
   - component: {fileID: 999841358}
   - component: {fileID: 999841357}
+  - component: {fileID: 999841359}
   m_Layer: 0
   m_Name: short_bamboo (4)
   m_TagString: Untagged
@@ -3791,6 +4229,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &999841359
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999841355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0044546127, y: 0.022276402}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6524868, y: 0.5832157}
+  m_EdgeRadius: 0
 --- !u!1 &1005426638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,6 +4428,7 @@ GameObject:
   - component: {fileID: 1040915837}
   - component: {fileID: 1040915839}
   - component: {fileID: 1040915838}
+  - component: {fileID: 1040915840}
   m_Layer: 0
   m_Name: short_bamboo (5)
   m_TagString: Untagged
@@ -4051,6 +4516,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1040915840
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040915836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0062093735, y: 0.037258625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6149921, y: 0.5344858}
+  m_EdgeRadius: 0
 --- !u!1 &1042457758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,6 +4553,7 @@ GameObject:
   - component: {fileID: 1042457759}
   - component: {fileID: 1042457761}
   - component: {fileID: 1042457760}
+  - component: {fileID: 1042457762}
   m_Layer: 0
   m_Name: short_bamboo (2)
   m_TagString: Untagged
@@ -4149,6 +4641,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1042457762
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042457758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005197525, y: 0.02598381}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6570129, y: 0.59686947}
+  m_EdgeRadius: 0
 --- !u!1 &1049831033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,6 +4759,7 @@ GameObject:
   - component: {fileID: 1056193163}
   - component: {fileID: 1056193165}
   - component: {fileID: 1056193164}
+  - component: {fileID: 1056193166}
   m_Layer: 0
   m_Name: excavator (3)
   m_TagString: Untagged
@@ -4328,6 +4847,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1056193166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056193162}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.024255753}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9427643, y: 0.89293003}
+  m_EdgeRadius: 0
 --- !u!1 &1065253787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,7 +5207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095990668}
   m_Layer: 0
-  m_Name: River
+  m_Name: River_Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5037,6 +5582,7 @@ GameObject:
   - component: {fileID: 1176937727}
   - component: {fileID: 1176937729}
   - component: {fileID: 1176937728}
+  - component: {fileID: 1176937730}
   m_Layer: 0
   m_Name: car2 (1)
   m_TagString: Untagged
@@ -5124,6 +5670,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1176937730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176937726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045289993, y: -0.0045289993}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.95830727, y: 0.5778637}
+  m_EdgeRadius: 0
 --- !u!1 &1198195818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +5788,7 @@ GameObject:
   - component: {fileID: 1238225207}
   - component: {fileID: 1238225206}
   - component: {fileID: 1238225208}
+  - component: {fileID: 1238225209}
   m_Layer: 0
   m_Name: Bamboo (1)
   m_TagString: Untagged
@@ -5303,6 +5876,32 @@ MonoBehaviour:
   speed: 4
   startingPosition: {x: -10, y: 1.5}
   endPosition: {x: 18, y: 2}
+--- !u!61 &1238225209
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238225205}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0062098503, y: 0.031049252}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0188513, y: 0.58461}
+  m_EdgeRadius: 0
 --- !u!1 &1254750341
 GameObject:
   m_ObjectHideFlags: 0
@@ -5574,6 +6173,7 @@ GameObject:
   - component: {fileID: 1290594390}
   - component: {fileID: 1290594389}
   - component: {fileID: 1290594391}
+  - component: {fileID: 1290594392}
   m_Layer: 0
   m_Name: truck
   m_TagString: Untagged
@@ -5661,6 +6261,32 @@ MonoBehaviour:
   speed: 3
   startingPosition: {x: 10, y: -2.5}
   endPosition: {x: -10, y: -2.5}
+--- !u!61 &1290594392
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290594388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015614986, y: 0.047534347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8949957, y: 0.7387569}
+  m_EdgeRadius: 0
 --- !u!1 &1340362589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5672,6 +6298,7 @@ GameObject:
   - component: {fileID: 1340362591}
   - component: {fileID: 1340362590}
   - component: {fileID: 1340362592}
+  - component: {fileID: 1340362593}
   m_Layer: 0
   m_Name: Lane1_car
   m_TagString: Untagged
@@ -5759,6 +6386,32 @@ MonoBehaviour:
   speed: 3
   startingPosition: {x: 10, y: -7.5}
   endPosition: {x: -20, y: -7.5}
+--- !u!61 &1340362593
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340362589}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.9955826, y: 1.0044177}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91335297, y: 0.66598654}
+  m_EdgeRadius: 0
 --- !u!1 &1342344480
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,6 +6756,7 @@ MonoBehaviour:
   playerLivesRemaining: 0
   playerIsAlive: 1
   playerCanMove: 1
+  isPlayerMoving: 0
   myAudioSource: {fileID: 0}
   jumpSound: {fileID: 0}
   deathSound: {fileID: 0}
@@ -6332,6 +6986,7 @@ GameObject:
   - component: {fileID: 1445797832}
   - component: {fileID: 1445797831}
   - component: {fileID: 1445797833}
+  - component: {fileID: 1445797834}
   m_Layer: 0
   m_Name: car2
   m_TagString: Untagged
@@ -6419,6 +7074,32 @@ MonoBehaviour:
   speed: 3.5
   startingPosition: {x: 10, y: -4.5}
   endPosition: {x: -10, y: -4.5}
+--- !u!61 &1445797834
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445797830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.009057999}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9130173, y: 0.5869217}
+  m_EdgeRadius: 0
 --- !u!1 &1452241309
 GameObject:
   m_ObjectHideFlags: 0
@@ -6592,6 +7273,7 @@ GameObject:
   - component: {fileID: 1484912649}
   - component: {fileID: 1484912651}
   - component: {fileID: 1484912650}
+  - component: {fileID: 1484912652}
   m_Layer: 0
   m_Name: truck (1)
   m_TagString: Untagged
@@ -6679,6 +7361,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1484912652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484912648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0047883987, y: 0.033221245}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8766918, y: 0.7542076}
+  m_EdgeRadius: 0
 --- !u!1 &1486629884
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,6 +7884,7 @@ GameObject:
   - component: {fileID: 1544509236}
   - component: {fileID: 1544509238}
   - component: {fileID: 1544509237}
+  - component: {fileID: 1544509239}
   m_Layer: 0
   m_Name: Lane1_car (2)
   m_TagString: Untagged
@@ -7263,6 +7972,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1544509239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544509235}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.0050879, y: 0.99491215}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.93156624, y: 0.68735313}
+  m_EdgeRadius: 0
 --- !u!1 &1562572609
 GameObject:
   m_ObjectHideFlags: 0
@@ -7274,6 +8009,7 @@ GameObject:
   - component: {fileID: 1562572610}
   - component: {fileID: 1562572612}
   - component: {fileID: 1562572611}
+  - component: {fileID: 1562572613}
   m_Layer: 0
   m_Name: Bamboo (11)
   m_TagString: Untagged
@@ -7361,6 +8097,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1562572613
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562572609}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0062093735, y: 0.037258863}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0436916, y: 0.5970292}
+  m_EdgeRadius: 0
 --- !u!1 &1575977532
 GameObject:
   m_ObjectHideFlags: 0
@@ -7533,7 +8295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620878933}
   m_Layer: 0
-  m_Name: Road
+  m_Name: Road_Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7576,6 +8338,7 @@ GameObject:
   - component: {fileID: 1631932389}
   - component: {fileID: 1631932391}
   - component: {fileID: 1631932390}
+  - component: {fileID: 1631932392}
   m_Layer: 0
   m_Name: Bamboo (9)
   m_TagString: Untagged
@@ -7663,6 +8426,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1631932392
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631932388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.012418747, y: 0.024839878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0561104, y: 0.62187004}
+  m_EdgeRadius: 0
 --- !u!1 &1644388148
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,6 +8868,7 @@ GameObject:
   - component: {fileID: 1733746133}
   - component: {fileID: 1733746135}
   - component: {fileID: 1733746134}
+  - component: {fileID: 1733746136}
   m_Layer: 0
   m_Name: Bamboo (6)
   m_TagString: Untagged
@@ -8166,6 +8956,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1733746136
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733746132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.037259102}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0064316, y: 0.59702873}
+  m_EdgeRadius: 0
 --- !u!1 &1749981753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8177,6 +8993,7 @@ GameObject:
   - component: {fileID: 1749981754}
   - component: {fileID: 1749981756}
   - component: {fileID: 1749981755}
+  - component: {fileID: 1749981757}
   m_Layer: 0
   m_Name: Bamboo (3)
   m_TagString: Untagged
@@ -8264,6 +9081,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1749981757
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749981753}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0062093735, y: 0.024839878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0188522, y: 0.5721903}
+  m_EdgeRadius: 0
 --- !u!1 &1767756675
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,6 +9604,7 @@ GameObject:
   - component: {fileID: 1868068786}
   - component: {fileID: 1868068788}
   - component: {fileID: 1868068787}
+  - component: {fileID: 1868068789}
   m_Layer: 0
   m_Name: Bamboo (4)
   m_TagString: Untagged
@@ -8848,6 +9692,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1868068789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868068785}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.031049013}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0561104, y: 0.60944986}
+  m_EdgeRadius: 0
 --- !u!1 &1880491048
 GameObject:
   m_ObjectHideFlags: 0
@@ -8940,6 +9810,7 @@ GameObject:
   - component: {fileID: 1913054480}
   - component: {fileID: 1913054479}
   - component: {fileID: 1913054481}
+  - component: {fileID: 1913054482}
   m_Layer: 0
   m_Name: car4_police
   m_TagString: Untagged
@@ -9027,6 +9898,32 @@ MonoBehaviour:
   speed: 4.5
   startingPosition: {x: -8.5, y: -3.5}
   endPosition: {x: 8.5, y: -3.5}
+--- !u!61 &1913054482
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913054478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.031589508, y: 0.027501345}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91010094, y: 0.533257}
+  m_EdgeRadius: 0
 --- !u!1 &1918766104
 GameObject:
   m_ObjectHideFlags: 0
@@ -9038,6 +9935,7 @@ GameObject:
   - component: {fileID: 1918766105}
   - component: {fileID: 1918766107}
   - component: {fileID: 1918766106}
+  - component: {fileID: 1918766108}
   m_Layer: 0
   m_Name: Bamboo (12)
   m_TagString: Untagged
@@ -9125,6 +10023,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1918766108
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918766104}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0062093735, y: 0.024838924}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0188541, y: 0.57218933}
+  m_EdgeRadius: 0
 --- !u!1 &1967987855
 GameObject:
   m_ObjectHideFlags: 0
@@ -9216,6 +10140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973915747}
   - component: {fileID: 1973915746}
+  - component: {fileID: 1973915748}
   m_Layer: 0
   m_Name: turtle (1)
   m_TagString: Untagged
@@ -9287,6 +10212,32 @@ Transform:
   m_Father: {fileID: 1095990668}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1973915748
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973915745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.09177399}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.89871407, y: 0.71516705}
+  m_EdgeRadius: 0
 --- !u!1 &1979158234
 GameObject:
   m_ObjectHideFlags: 0
@@ -9460,6 +10411,7 @@ GameObject:
   - component: {fileID: 2011404423}
   - component: {fileID: 2011404422}
   - component: {fileID: 2011404424}
+  - component: {fileID: 2011404425}
   m_Layer: 0
   m_Name: Bamboo (2)
   m_TagString: Untagged
@@ -9547,6 +10499,32 @@ MonoBehaviour:
   speed: 3.5
   startingPosition: {x: -10, y: 3.5}
   endPosition: {x: 18, y: 3.5}
+--- !u!61 &2011404425
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011404421}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.031048536}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.0064316, y: 0.609447}
+  m_EdgeRadius: 0
 --- !u!1 &2019123565
 GameObject:
   m_ObjectHideFlags: 0
@@ -9800,6 +10778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2063563194}
   - component: {fileID: 2063563193}
+  - component: {fileID: 2063563195}
   m_Layer: 0
   m_Name: turtle
   m_TagString: Untagged
@@ -9871,6 +10850,32 @@ Transform:
   m_Father: {fileID: 1095990668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2063563195
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063563192}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007980347, y: 0.08379388}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8827553, y: 0.73112726}
+  m_EdgeRadius: 0
 --- !u!1 &2073100801
 GameObject:
   m_ObjectHideFlags: 0
