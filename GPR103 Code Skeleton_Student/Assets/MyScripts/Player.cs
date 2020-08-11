@@ -22,9 +22,11 @@ public class Player : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip deathSound;
 
-    public GameObject deathFxPrefab;
+    public Animator myAnimator;
 
     public bool onPlatform = false;
+    public LayerMask platformMask;
+    public LayerMask riverMask;
 
     public KeyCode up = KeyCode.W;
     public KeyCode down = KeyCode.S;
@@ -52,8 +54,8 @@ public class Player : MonoBehaviour
                 if (isPlayerMoving)
                 {
                     myAudioSource.PlayOneShot(jumpSound);
-
-                }
+                    myAnimator.SetTrigger("Jump");
+                }   
             }
         }
     }
@@ -68,21 +70,21 @@ public class Player : MonoBehaviour
                 playerIsAlive = false;
                 playerCanMove = false;
                 myAudioSource.PlayOneShot(deathSound);
-                Instantiate(deathFxPrefab, transform.position, Quaternion.identity);
-                GetComponent<SpriteRenderer>().enabled = false;
+
+                myAnimator.SetTrigger("RoadKill");
             }
-            else if(collision.transform.GetComponent<Platform>()!= null)
+            else if(collision.transform.GetComponent<Platform>() != null)
             {
                 print("ran into log");
+                onPlatform = true;
                 transform.SetParent(collision.transform);
-                onPlatform = false;
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
     }
 
     // Moves the player and rotates the sprite according to the direction player is moving
@@ -96,6 +98,7 @@ public class Player : MonoBehaviour
             GetComponent<Transform>().eulerAngles = new Vector3(0, 0, 0);
 
             isPlayerMoving = true;
+            transform.SetParent(null);
         }
         else if (Input.GetKeyUp(down) && transform.position.y > myGameManager.levelConstraintBottom)
         {
@@ -104,6 +107,7 @@ public class Player : MonoBehaviour
             GetComponent<Transform>().eulerAngles = new Vector3(0, 0, 180);
 
             isPlayerMoving = true;
+            transform.SetParent(null);
         }
         else if (Input.GetKeyUp(left) && transform.position.x > myGameManager.levelConstraintLeft)
         {
@@ -126,5 +130,9 @@ public class Player : MonoBehaviour
             isPlayerMoving = false;
         }
 
+    }
+    void DetachFromParent()
+    {
+        transform.SetParent(null);
     }
 }
