@@ -670,7 +670,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179718151}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2338d10ecd33e424cb94a839a5b093c0, type: 3}
   m_Name: 
@@ -684,14 +684,13 @@ MonoBehaviour:
   myAudioSource: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 1b10fe5a842823446bf3a263fceaca5a, type: 3}
   deathSound: {fileID: 0}
+  drownSound: {fileID: 0}
   myAnimator: {fileID: 0}
+  roadkillPrefab: {fileID: 0}
+  drownPrefab: {fileID: 0}
+  deathCooldown: 0
+  inRiver: 0
   onPlatform: 0
-  platformMask:
-    serializedVersion: 2
-    m_Bits: 0
-  riverMask:
-    serializedVersion: 2
-    m_Bits: 0
   up: 119
   down: 115
   left: 97
@@ -722,7 +721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179718151}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eaaaebe6fc4e954c9b89f08f7a06ece, type: 3}
   m_Name: 
@@ -749,7 +748,7 @@ GameObject:
   - component: {fileID: 190271802}
   m_Layer: 9
   m_Name: poof
-  m_TagString: Untagged
+  m_TagString: River
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1097,7 +1096,7 @@ GameObject:
   - component: {fileID: 609965095}
   m_Layer: 0
   m_Name: ObjectCalibrate (3)
-  m_TagString: Untagged
+  m_TagString: Bamboo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,6 +1532,9 @@ MonoBehaviour:
   isGameRunning: 0
   totalGameTime: 100
   gameTimeRemaining: 0
+  uiGameOverWindow: {fileID: 0}
+  uiGameOverMsg: {fileID: 0}
+  uiScore: {fileID: 0}
 --- !u!4 &927544448
 Transform:
   m_ObjectHideFlags: 0
@@ -2164,7 +2166,7 @@ GameObject:
   - component: {fileID: 1676484669}
   m_Layer: 0
   m_Name: ObjectCalibrate (2)
-  m_TagString: Untagged
+  m_TagString: Bamboo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

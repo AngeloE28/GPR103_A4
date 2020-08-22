@@ -5,7 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
+  - EndZone
+  - Kill
+  - turtle
   - River
+  - vehicle
+  - Platform
+  - Points
+  - Candy
   layers:
   - Default
   - TransparentFX
