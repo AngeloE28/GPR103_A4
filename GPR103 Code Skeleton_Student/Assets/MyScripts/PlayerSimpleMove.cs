@@ -8,8 +8,7 @@ public class PlayerSimpleMove : MonoBehaviour
     public LayerMask platformMask;
     public LayerMask riverMask;
 
-    public Vector2 Pos;
-    public Vector2 ePos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +22,7 @@ public class PlayerSimpleMove : MonoBehaviour
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position + new Vector3(0.3f, 0f, 0f), Vector2.left, 0.1f, platformMask);
         if (water())
         {
-            ePos = new Vector2(6, -8.5f);
+            print("watah");
         }
       
         if (hitInfo)
@@ -78,11 +77,6 @@ public class PlayerSimpleMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -93,7 +87,7 @@ public class PlayerSimpleMove : MonoBehaviour
         else if (collision.transform.GetComponent<Platform>() != null)
         {
             print("ran into log");
-           // transform.SetParent(collision.transform);
+            transform.SetParent(collision.transform);
         }
         //else
         //{

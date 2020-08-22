@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// This script is to be attached to a GameObject called GameManager in the scene. It is to be used to manager the settings and overarching gameplay loop.
@@ -22,6 +24,14 @@ public class GameManager : MonoBehaviour
     public float totalGameTime; //The maximum amount of time or the total time avilable to the player.
     public float gameTimeRemaining; //The current elapsed time
 
+
+    [Header("UI")]
+    public GameObject uiGameOverWindow;
+    public TMP_Text uiGameOverMsg;
+    public TMP_Text uiScore;
+    public TMP_Text uiTime;
+    public TMP_Text uiHighScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,5 +50,51 @@ public class GameManager : MonoBehaviour
         {
             isGameRunning = false;
         }
+        // Checks to see if a new highscore is made
+        if(currentScore > highScore)
+        {
+            highScore = currentScore;
+        }
+    }
+
+    public void Restart()
+    {
+        print("restart the scene poofy");
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // ^^ is the same as the bottom one due to index being 0 we know this
+        //SceneManager.LoadScene(0);
+    }
+
+    // Updates the score of the player
+    public void updateScore(int amount)
+    {
+        currentScore += amount;
+        uiScore.text = "Score: " + currentScore.ToString();
+    }
+
+    public void showHighScore()
+    {
+        uiHighScore.text = "High Score: " + highScore.ToString();
+    }
+
+    // Shows the time available
+    public void updateTime()
+    {
+        uiTime.text = "Time left: " + Mathf.Round(gameTimeRemaining).ToString();
+    }
+
+    // Control to end the game
+    public void GameOver(bool isWin)
+    {
+        if (isWin == true)
+        {
+            uiGameOverMsg.text = "Winner is u";
+        }
+        else
+        {
+            uiGameOverMsg.text = "loser is u";
+        }
+        uiGameOverWindow.SetActive(true);
     }
 }
