@@ -65,7 +65,7 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myGameManager.updateTime(); // Shows the time and updates it
+        //myGameManager.updateTime(); // Shows the time and updates it
         // Checks to see if game is running
         if (myGameManager.isGameRunning == true)
         {

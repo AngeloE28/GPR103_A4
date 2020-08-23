@@ -9,10 +9,10 @@ public class EndZone_Spawner : MonoBehaviour
 
     public Animator EndZone;    // Gets its animator
 
-    public float delayTime; // Creates a delay before the gameObject disappears
-    public float spawnTime; // Time before gameObject spawns
-    public float candyTime; // Gives a value to determine if gameObject should be a candy
-    public float evilOctoTime;  // Gives a value to determine if gameObject shoudl be the evil octo
+    private float delayTime; // Creates a delay before the gameObject disappears
+    private float spawnTime; // Time before gameObject spawns
+    private float candyTime; // Gives a value to determine if gameObject should be a candy
+    private float evilOctoTime;  // Gives a value to determine if gameObject shoudl be the evil octo
 
     // Start is called before the first frame update
     void Start()

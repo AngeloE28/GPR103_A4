@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5970023150436160395}
   m_Layer: 0
-  m_Name: 3Turtles
+  m_Name: 3Turtles_HM
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 8429470253138466389}
   m_Layer: 0
   m_Name: turtle
-  m_TagString: turtle
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,11 +156,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: -1
-  speed: 1.5
+  speed: 2.5
   startingPosition: {x: 9.5, y: -0.5}
   endPosition: {x: -9.5, y: -0.5}
-  sinkTimer: 3
-  resetSinkTimer: 3
+  sinkTimer: 2
+  resetSinkTimer: 2
   turtleAnim: {fileID: 8429470253138466389}
   canSink: 0
 --- !u!95 &8429470253138466389
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 267167201889778589}
   m_Layer: 0
   m_Name: turtle
-  m_TagString: turtle
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,11 +305,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: -1
-  speed: 1.5
+  speed: 2.5
   startingPosition: {x: 10.5, y: -0.5}
   endPosition: {x: -8.5, y: -0.5}
-  sinkTimer: 3
-  resetSinkTimer: 3
+  sinkTimer: 2
+  resetSinkTimer: 2
   turtleAnim: {fileID: 267167201889778589}
   canSink: 0
 --- !u!95 &267167201889778589
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 5048358367705606458}
   m_Layer: 0
   m_Name: turtle
-  m_TagString: turtle
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -454,11 +454,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: -1
-  speed: 1.5
+  speed: 2.5
   startingPosition: {x: 8.5, y: -0.5}
   endPosition: {x: -10.5, y: -0.5}
-  sinkTimer: 3
-  resetSinkTimer: 3
+  sinkTimer: 2
+  resetSinkTimer: 2
   turtleAnim: {fileID: 5048358367705606458}
   canSink: 0
 --- !u!95 &5048358367705606458

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 /// <summary>
@@ -9,8 +8,6 @@ using UnityEngine;
 /// </summary>
 public class Player : MonoBehaviour
 {
-    public string playerName = ""; //The players name for the purpose of storing the high score
-
     private int playerTotalLives = 3; //Players total possible lives.
     public int playerLivesRemaining; //PLayers actual lives remaining.
 
@@ -22,9 +19,9 @@ public class Player : MonoBehaviour
     // Booleans to control the water section of the game
     public bool inRiver = false;    // Is player in the river?
     public bool onPlatform = false; // Is player on the platform?
-    public bool inEndZone = false;
-    public bool safeInEndZone = false;
-    public bool inKillZone = false;
+    public bool inEndZone = false;  // Is player in an endzone?
+    public bool safeInEndZone = false;  // Is the endzone safe?
+    public bool inKillZone = false; // Is player in a killzone?
 
     // Gets the initial position used for respawning player
     private Vector2 initialPosition;
@@ -45,13 +42,12 @@ public class Player : MonoBehaviour
     private int endZone = 0; // Counts how many endzones is reached
 
     // To easily change the the keycodes in inspector and the code
-    public KeyCode up = KeyCode.W;
-    public KeyCode down = KeyCode.S;
-    public KeyCode left = KeyCode.A;
-    public KeyCode right = KeyCode.D;
+    public KeyCode up = KeyCode.UpArrow;
+    public KeyCode down = KeyCode.DownArrow;
+    public KeyCode left = KeyCode.LeftArrow;
+    public KeyCode right = KeyCode.RightArrow;
 
-
-    private GameManager myGameManager; //A reference to the GameManager in the scene.
+    public GameManager myGameManager; //A reference to the GameManager in the scene.
     public GameObject life1;    // Reference for the first sprite representing amount of life left
     public GameObject life2;    // Reference for the second sprite representing amount of life left
     public GameObject pointSystem;  // Reference to empty game object parenting for the many boxcolliders for the forward point system
@@ -69,8 +65,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myGameManager.updateTime(); // Shows the time and updates it
-
         // Checks to see if game is running
         if (myGameManager.isGameRunning == true)
         {
@@ -164,12 +158,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Saves tings when quitting
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Checks to see if player is alive
@@ -181,12 +169,6 @@ public class Player : MonoBehaviour
             }
             // Checks if player player is on a platform
             else if (collision.transform.tag == "Platform")
-            {
-                onPlatform = true;
-                transform.SetParent(collision.transform);
-            }
-            // Checks if player is on a turtle
-            else if (collision.transform.tag == "turtle")
             {
                 onPlatform = true;
                 transform.SetParent(collision.transform);
@@ -256,12 +238,6 @@ public class Player : MonoBehaviour
         {
             // Take care of leaving platform
             if (collision.transform.tag == "Platform")
-            {
-                onPlatform = false;
-                transform.SetParent(null);
-            }
-            // take care of leaving the turtle
-            else if (collision.transform.tag == "turtle")
             {
                 onPlatform = false;
                 transform.SetParent(null);

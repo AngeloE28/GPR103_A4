@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6790340652735536160}
   - component: {fileID: 6790340652735536161}
   m_Layer: 0
-  m_Name: short_bamboo
+  m_Name: short_bamboo_HM
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: 1
-  speed: 1.5
+  speed: 2
   startingPosition: {x: -8.8, y: 0.5}
   endPosition: {x: 8.8, y: 0.5}
 --- !u!61 &6790340652735536161

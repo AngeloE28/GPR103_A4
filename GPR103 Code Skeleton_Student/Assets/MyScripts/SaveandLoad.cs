@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class SaveandLoad : MonoBehaviour
 {
+    public GameManager myGameManager;
 
     public int playerHighScore = 0;
     public int playerCurrentScore = 0;
-
-    public string playersName = "DefaultToilet";
 
     public float gameTimer = 5f;
     public bool isGameOver = false;
@@ -19,33 +18,14 @@ public class SaveandLoad : MonoBehaviour
     void Start()
     {
         playerHighScore = PlayerPrefs.GetInt("HighScore");
-        playersName = PlayerPrefs.GetString(PLAYERNAMESAVE);
 
-        print("Current High Score: " + playerHighScore);
-        print("Players name: " + playersName);
+        print("High Score: " + playerHighScore);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            playersName = "Potter";
-            PlayerPrefs.SetString(PLAYERNAMESAVE, playersName);
-        }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGameOver == false)
-        {
-
-            playerCurrentScore += 1;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Delete))
-        {
-            PlayerPrefs.DeleteAll();
-        }
-
-        gameTimer -= Time.deltaTime;
         if (gameTimer <= 0 && isGameOver == false)
         {
             isGameOver = true;
